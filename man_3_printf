@@ -1,4 +1,4 @@
-.TH _PRINTF 3  "_printf"
+.TH _PRINTF 3  "printf"
 
 .SH NAME
 .B _printf\fR \- formatted output conversion

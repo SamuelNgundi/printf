@@ -9,6 +9,7 @@ unsigned int (*handle_specifiers(const char *specifier))(va_list, buffer_t *,
 
 /**
  * handle_flags - Matches flags with corresponding values.
+ * *handle_specifiers - Handles a specific handle
  * @flag: A pointer to a potential string of flags.
  * @index: An index counter for the original format string.
  *
@@ -160,8 +161,8 @@ int handle_precision(va_list args, const char *modifier, char *index)
 /**
  * handle_specifiers - Matches a conversion specifier with
  *                     a corresponding conversion function.
- * @specifier: A pointer to a potential conversion specifier.
- *
+ * @char: character
+ * @int: integer
  * Return: If a conversion function is matched - a pointer to the function.
  *         Otherwise - NULL.
  */
